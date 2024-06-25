@@ -1,0 +1,23 @@
+Celery - Distributed task queue system use to execute task asynchronously in python application
+Celery tasks:
+	Running ML models.
+	Sending confirmation email.
+	Web scraping and crawling.
+	Processing images.
+	Generating reports.
+	Data Analysis / Processing.
+	Asynchronous task execution.
+	Distributed task queue.
+	Task scheduling and Periodic Tasks.
+	Result handling.
+	Error handling and retry mechanism.
+	Monitoring and management.
+	
+	
+Message provider		Message broker      Message worker       Result backendDB
+ 	Django		----> 		Redis	 ---->    Celery      ----->      DB
+
+Message providers: Components within a django application that generate and send tasks to salary worker 
+				   process for asynchronous application they determine when and in what conditions tasks 
+				   should be trigerred and delegated task exceution to salary infrastructure enabling 
+				   scalable and responsive application processing.
