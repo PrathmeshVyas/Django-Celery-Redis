@@ -21,5 +21,10 @@ Message providers: Components within a django application that generate and send
 				   process for asynchronous application they determine when and in what conditions tasks 
 				   should be trigerred and delegated task exceution to salary infrastructure enabling 
 				   scalable and responsive application processing.
-Message broker: Enables communication between task producer and task consumer in distribute task queue. So, it acts as a messaging middleware.
-		It store's the task and put them in a queue.
+Message broker: Enables communication between task producer and task consumer in distribute task queue. 
+				So, it acts as a messaging middleware. It store's the task and put them in a queue.
+
+Workers: Components responsible for execution of task produced by task producers they form back-bone for
+		 the Celery architecture.
+		Independed processes that listen to Message broker for incoming task when task is receive it retrievs 
+		it form message queue and performs the assigned operations. 
