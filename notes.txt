@@ -21,3 +21,5 @@ Message providers: Components within a django application that generate and send
 				   process for asynchronous application they determine when and in what conditions tasks 
 				   should be trigerred and delegated task exceution to salary infrastructure enabling 
 				   scalable and responsive application processing.
+Message broker: Enables communication between task producer and task consumer in distribute task queue. So, it acts as a messaging middleware.
+		It store's the task and put them in a queue.
